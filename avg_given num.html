@@ -1,0 +1,33 @@
+<html>
+
+<body>the avg for given number <br>
+    ex array, var elmt = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    <!-- <p id="avg"></p> -->
+    <!-- <script>
+        debugger
+        var Arrey=[0,1,2,3,4]
+        function avgNum(Arrey) {
+            var total = 0;
+            for (i = 0; i < Arrey.length; i++) {
+                debugger
+                total+=Arrey[i]
+             }
+             var avg=total/Arrey.length
+        }
+        document.getElementById("avg").innerHTML=avg
+        alert(avg)
+    </script> -->
+<script>
+var elmt = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+var sum = 0;
+for( var i = 0; i < elmt.length; i++ ){
+    sum += parseInt( elmt[i], 10 ); //don't forget to add the base
+}
+var avg = sum/elmt.length;
+
+document.write( "<br> The sum of all the elements is: " + sum + "<br> The average is: " + avg );
+</script>
+</body>
+
+</html>
+<!-- individuals total divided by toatal number of elements, ex: (1+2+3)/3 -->

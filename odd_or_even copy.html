@@ -1,0 +1,27 @@
+<html>
+<body>Odd or Even number finding <br>
+
+<input id="oddEvenNum" value="0"><br>
+<button onclick="oddEven()" type="button">Odd or Even number</button>
+    <script>
+        
+    function oddEven(){debugger
+       var a=document.getElementById("oddEvenNum").value
+        if(a==null || a==undefined || a==""){
+            alert("enter properly")
+        }
+       else if(a%2==0){
+            alert("Even number")
+            return
+        }
+        else{
+            alert("Odd number")
+            return
+        }
+        
+    }
+    </script>
+</body>
+</html>
+
+<!-- the simple condition is variable % 2 ==0 or !=0 -->

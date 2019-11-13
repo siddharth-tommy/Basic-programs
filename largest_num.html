@@ -1,0 +1,20 @@
+<html>
+
+<body>Largest and smallest Number<br>
+
+example array  <b>[3, 6, 2, 56, 32, 5, 89, 32]</b>
+    <button onclick="largeNum()" type="button">Max/min Num</button>
+    <script>
+        var arr = [3, 6, 2, 56, 32, 5, 89, 32];
+        function largeNum() {
+           var maxNumber=Math.max.apply(null, arr)
+           alert("max number is "+maxNumber);
+           var minNumber=Math.min.apply(null, arr);
+           alert("min number is "+minNumber);
+        }
+    </script>
+</body>
+
+</html>
+
+<!-- use max and min functions for maximum and minimum values of an array -->
