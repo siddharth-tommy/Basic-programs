@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="icon" type="image" href="../ascii-value/tom.JPG">
+    </head>
+<style>
+::placeholder{
+    color: blue;
+    opacity: 0.5;
+}
+</style>
+<body onload="initialDisplay()">
+    <br>
+    <input placeholder="test plindrome" type="text" id="palindrome"> <br><br>
+    <button onclick="checkPalindrome()" type="button">check palindrome</button>
+    <br>
+    <p id="palindrome"></p>
+    <p id="success" class="alert alert-success">its a palindrome</p>
+    <p id="fail" class="alert alert-warning">its not a palindrome</p>
+    <script src="../palindrome/palindrome.js"></script>
+</body>
+
+</html>
