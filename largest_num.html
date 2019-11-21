@@ -7,9 +7,15 @@ example array  <b>[3, 6, 2, 56, 32, 5, 89, 32]</b>
     <script>
         var arr = [3, 6, 2, 56, 32, 5, 89, 32];
         function largeNum() {
-           var maxNumber=Math.max.apply(null, arr)
+        //    var maxNumber=Math.max.apply(null, arr)
+        //    alert("max number is "+maxNumber);
+        //    var minNumber=Math.min.apply(null, arr);
+        //    alert("min number is "+minNumber);
+
+        //     we can use (... array name) also, for example
+        var maxNumber=Math.max(... arr)
            alert("max number is "+maxNumber);
-           var minNumber=Math.min.apply(null, arr);
+           var minNumber=Math.min(... arr);
            alert("min number is "+minNumber);
         }
     </script>
